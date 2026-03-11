@@ -1,0 +1,20 @@
+let a = 10;
+let b = 20;
+
+console.log(a>b);
+console.log(a==b);
+console.log(a!=b); //true
+
+// 'A' 에서 'Z' 로 갈 수록 아스키코드 값이 커진다.
+console.log("A"< "B");// true
+console.log("ABCD" > "ABCD"); //false
+
+let size1 = 1024;
+let size2 = "1024";
+
+console.log(size1 == size2);//true
+console.log(size1 == size2);//false
+
+let age = 17;
+let result = (age>=19) ? "성인입니다" : "더 자라렴";
+console.log(result);
