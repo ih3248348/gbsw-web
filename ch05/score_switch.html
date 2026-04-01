@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>성적확인</h2>
+    <input id="input_number" 
+           type="number" 
+           placeholder="정수를 입력하세요." 
+        /> 
+    <button id="btn" type="button">완료</button>
+    <div id="result"></div>
+</body>
+</html>
+
+<script>
+    document.getElementById("btn").onclick = function () {
+        const score = Number(document.getElementById("input_number").value);
+        let result = "";
+
+        // 범위 체크
+        if (score > 100 || score < 0) {
+            document.getElementById("result").textContent = 
+                "올바른 점수(0~100)를 입력하세요.";
+            return;
+        }
+
+        switch (Math.trunc(score / 10)) {
+            case 10:
+            case 9:
+                result = "A";
+                break;
+            case 8:
+                result = "B";
+                break;
+            case 7:
+                result = "C";
+                break;
+            case 6:
+                result = "D";
+                break;
+            default:
+                result = "F";
+        }
+
+        document.getElementById("result").textContent = result;
+    };
+</script>
