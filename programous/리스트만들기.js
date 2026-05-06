@@ -4,7 +4,6 @@ function solution(start_num, end_num) {
         answer. push(i);
     }
 
-
     return answer;
 }
 
