@@ -46,4 +46,4 @@ document.getElementById("btn_add").onclick = function () {
     // 3. 비어있지 않다면, 배열에 추가
     // 4. 목록에 렌더링
     
-}; 
+};
